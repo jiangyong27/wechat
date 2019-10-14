@@ -21,16 +21,17 @@ var (
 
 // UserInfo 用户信息
 type UserInfo struct {
-	OpenID    string `json:"openId"`
-	UnionID   string `json:"unionId"`
-	NickName  string `json:"nickName"`
-	Gender    int    `json:"gender"`
-	City      string `json:"city"`
-	Province  string `json:"province"`
-	Country   string `json:"country"`
-	AvatarURL string `json:"avatarUrl"`
-	Language  string `json:"language"`
-	Watermark struct {
+	OpenID          string `json:"openId"`
+	UnionID         string `json:"unionId"`
+	NickName        string `json:"nickName"`
+	Gender          int    `json:"gender"`
+	City            string `json:"city"`
+	Province        string `json:"province"`
+	Country         string `json:"country"`
+	AvatarURL       string `json:"avatarUrl"`
+	Language        string `json:"language"`
+	PurePhoneNumber string `json:"purePhoneNumber"` //添加解密字段
+	Watermark       struct {
 		Timestamp int64  `json:"timestamp"`
 		AppID     string `json:"appid"`
 	} `json:"watermark"`
